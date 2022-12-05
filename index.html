@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>To Do List</title>
+		<!-- fontawesome icons kit link -->
+
+		<!-- css link -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<!-- fontawesome for icons-->
+		<script src="https://kit.fontawesome.com/cc3ebe336e.js" crossorigin="anonymous">
+		</script>
+	</head>
+
+	<body>
+
+
+		<main>
+			
+
+			<h1><center>Todolist</center></h1>
+
+			<!-- container -->
+
+			<div id="window-container">
+
+				<div id="main-container">
+
+					<div id = "task-box">
+						<!-- icon - add task box -add button-->
+						<div id="icon-addtask-icon">
+								
+									<i class="fa-solid fa-rectangle-list"></i> 
+								<!-- input box -->
+								<span id="add-task-input">
+									<input type="text" name="add-task" placeholder="Add Task..." required="">	
+								</span>
+								<!-- add button icon with functionality -->
+								<button id="Add" onclick="increment()">Add</button>
+				
+					</div>
+				</div>
+
+				<div class="icon-text">
+					<i class="fa-solid fa-check-double"></i>
+					<span class= "text">Complete all tasks</span>
+					<span class="right-bottom"> Clear completed</span>
+				</div>
+
+
+				<hr/>
+				<div id="task-list-add-delete">
+				
+        	    </div>				
+				
+
+				<hr/>
+
+				<!-- footer -- counting + text -->
+				<footer>
+				 <div class="task-count">
+		                <p class="task-left-count">0</p>&nbsp
+		                <p class="text">tasks left</p>
+		                <p class="right-bottom">All Uncomplete Complete</p>
+		            </div>
+				</footer>
+
+				</div>
+			</div>
+		</main>
+
+		<!-- javascript -->
+		<!-- script js -->
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+body{
+
+}
+
+#window-container{
+	margin-left: 30%;
+	height: 390px;
+	width: 530px;
+	background-color: #f1f2ed;
+	border: 1px solid #f1f2ed  ;
+
+
+}
+/*margin all from let */
+#main-container , .icon-text, #task-box, #task-list-add-delete{
+	margin-left: 5%;
+}
+
+#main-container{
+
+	height: 400px;
+	width: 500px;
+	background-color: ##F9F5F4;
+	/*border: 1px solid black;*/
+	/*border-radius: 10px;*/
+}
+
+/*add task div*/
+
+#task-box , #task-list-add-delete , #add-task-input{
+	border-radius: 10px;
+
+}
+#task-box{
+	margin-top: 2.5%;
+	height: 50px;
+	width: 450px;
+	background-color: darkgrey;
+	padding: 5px 5px;
+
+}
+.icon-list .add-task-input .icon-add{
+	display: inline-block;
+}
+
+#icon-addtask-icon{
+	margin-top: 2%;
+	margin-left: .5%;
+}
+
+/*div section where tasks are added and deleted from*/
+#task-list-add-delete{
+	height: 200px;
+	width: 450px;
+	background-color: lightgrey;
+	padding: 5px , 5px;
+	overflow-y:  scroll;
+
+}
+/*hiding scroll bar but can scroll*/
+#task-list-add-delete::-webkit-scrollbar {
+    display: none;
+}
+
+.delete{
+	margin-left: 80%;
+	padding: 5px,5px;
+}
+.task , .delete{
+	padding: 5px,5px;
+}
+
+.task-count{
+    display:flex;
+    margin-left: 5%;
+    
+}
+.right-bottom{
+	margin-left: 40%;
+}
+
+.icon-text{
+	margin-top: 2%;
+}
+
+#add-task-input input{
+	 width: 75%;
+    height: 40px;
+/*    padding: 4px;
+*/    color: #111111;
+    font-weight: 500;
+    /*position: relative;*/
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 1px solid #d1d3d4;
+
+}
+
+#Add{
+	 width: 15%;
+    height: 40px;
+/*    padding: 4px;
+*/    color: #111111;
+    font-weight: 500;
+    /*position: relative;*/
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 1px solid #d1d3d4;
+
+}
+.icon-list i{
+	width: 10px;
+	height: 70px;
+    padding: 4px;
+  
+ }
+
+ .text , .right-bottom , .task-left-count , .fa-solid fa-check-double{
+ 	color: #A9937F;
+ }
+ /*#task-list-add-delete{
+ 	border-radius: 10px;
+    position: relative;
+    padding: 5px;
+    margin-top: 10px;	
+ }*/
+

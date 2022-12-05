@@ -86,10 +86,9 @@ body{
 #add-task-input input{
 	 width: 75%;
     height: 40px;
-/*    padding: 4px;
-*/    color: #111111;
+    color: #111111;
     font-weight: 500;
-    /*position: relative;*/
+    position: relative;
     border-radius: 5px;
     font-family: 'Poppins',sans-serif;
     font-size: 15px;
@@ -100,10 +99,8 @@ body{
 #Add{
 	 width: 15%;
     height: 40px;
-/*    padding: 4px;
-*/    color: #111111;
+    color: #111111;
     font-weight: 500;
-    /*position: relative;*/
     border-radius: 5px;
     font-family: 'Poppins',sans-serif;
     font-size: 15px;
@@ -117,13 +114,16 @@ body{
   
  }
 
- .text , .right-bottom , .task-left-count , .fa-solid fa-check-double{
+ .text , .right-bottom , #task-left-count {
  	color: #A9937F;
  }
- /*#task-list-add-delete{
+ .icon-text i{
+	color: #A9937F;
+ }
+ #task-list-add-delete{
  	border-radius: 10px;
     position: relative;
     padding: 5px;
     margin-top: 10px;	
- }*/
+ }
 

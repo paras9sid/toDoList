@@ -1,14 +1,11 @@
 
 var task_input = document.querySelector('#add-task-input input');
 var task_add = document.querySelector('#task-list-add-delete');
+
 var add_task = document.querySelector('#Add').onclick = function(){
     
     // button add clicked without entering any task in the input box
     
-    //counting starts by clicking add button for task
-
-
-
     if(task_input.value.length == 0){
         alert("Kindly Enter Task Name!!!!")
     }
@@ -20,16 +17,28 @@ var add_task = document.querySelector('#Add').onclick = function(){
                 <span id="taskname">
                     ${task_input.value}
                 </span>
-                <button class="delete" onclick="decrement()">
+                <button class="delete">
 					<i class="fa-solid fa-circle-minus"></i>
                 </button>
             </div>
         `;
     }
-
-
-    
-
+    //   initialising a variable name data
+      var data = 0;
+  
+      //printing default value of data that is 0 in p tag
+      document.getElementById("task-left-count").innerText = data;
+ 
+      //creation of increment function
+      function increment() {
+          data = data + 1;
+          document.getElementById("task-left-count").innerText = data;
+      }
+      //creation of decrement function
+      function decrement() {
+          data = data - 1;
+          document.getElementById("task-left-count").innerText = data;
+      }
 
     //delete function implemented
 
@@ -40,21 +49,7 @@ var add_task = document.querySelector('#Add').onclick = function(){
 	        }
 	    }
 
-	    //initialising a variable name data
-            var data = 0;
-  
-            //printing default value of data that is 0 in h2 tag
-            document.getElementById("task-left-count").innerText = data;
-  
-            //creation of increment function
-            function increment() {
-                data = data + 1;
-                document.getElementById("task-left-count").innerText = data;
-            }
-            //creation of decrement function
-            function decrement() {
-                data = data - 1;
-                document.getElementById("task-left-count").innerText = data;
-            }
+   
 
+	   
 }
